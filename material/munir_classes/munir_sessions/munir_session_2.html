@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Tests</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    nav li {
+      margin: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    details {
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #e0f7fa;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #005f73;
+    }
+
+    .answer {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fff3cd;
+      border-left: 4px solid #ffeb3b;
+      border-radius: 4px;
+      color: #856404;
+    }
+
+    .fancy {
+        font-family: 'Indie Flower', cursive;
+        font-weight: bold;
+        font-size: 1.8em;
+        color: #2a9d8f;
+    }
+
+    .addition {
+      display: inline-block;
+      font-family: monospace;
+      text-align: right;
+      line-height: 1.5;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .addition .line {
+      border-top: 2px solid #000;
+      margin-top: 5px;
+    }
+
+    table {
+        margin: 0 auto; /* Centers the table horizontally */
+        border-collapse: collapse;
+        width: 60%;
+    }
+    th, td {
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+    }
+    .table-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: #f2f2f2;
+    }
+
+    .number-box {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 24px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+    <h1>Welcome <span class="fancy">Munir</span> to your practice session <span class="fancy">2</span></h1>
+  <nav>
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#Comparing_and_rounding">Comparing and rounding</a></li>
+      <li><a href="#Addition_and_subtraction">Addition and subtraction</a></li>
+      <li><a href="#Multiplication">Multiplication</a></li>
+    </ul>
+  </nav>
+
+  <section id="Comparing_and_rounding">
+    <h2>Comparing and rounding</h2>
+
+    <details>
+      <summary>Test 1: Algebra Basics</summary>
+      <p><strong>Question:</strong> Solve for x: 2x + 3 = 7
+        <div class="addition">
+            <div>  235</div>
+            <div>+ 158</div>
+            <div class="line"></div>
+            <div>  ?</div>
+          </div>
+      </p>
+      <details>
+        <summary>Show Answer</summary>
+        <div class="answer">
+          <p><strong>Answer:</strong> x = 2</p>
+        </div>
+      </details>
+    </details>
+
+    <details>
+    <summary>Test 2: Compare numbers in tables</summary>
+    <p><strong>Question:</strong> A business analyst compared purchases of different types of cereal. 
+                                Which cereal had the most boxes purchased?</p>                            
+    <table>
+    <tr>
+        <th colspan="2" class="table-title">Boxes of cereal purchased</th>
+    </tr>
+    <tr>
+        <th>Cereal</th>
+         <th>Number of boxes purchased</th>
+    </tr>
+    <tr>
+        <td>Almond Crisp Crunch</td>
+        <td>179</td>
+    </tr>
+    <tr>
+        <td>Caramel Deelish</td>
+        <td>191</td>
+    </tr>
+    <tr>
+        <td>Sugar Pops</td>
+        <td>117</td>
+    </tr>
+    <tr>
+        <td>Oaty Yums</td>
+        <td>197</td>
+    </tr>
+    </table>
+    <details>
+        <summary>Show Answer</summary>
+        <div class="answer">
+          <p><strong>Answer:</strong> Oaty Yums</p>
+        </div>
+      </details>
+    </details>
+
+    <details>
+        <summary>Test 3: Compare numbers in tables</summary>
+        <p><strong>Question:</strong> A real estate agent looked into how many houses were sold in different cities. 
+            Where were the most houses sold?</p>                            
+        <table>
+        <tr>
+            <th colspan="2" class="table-title">House sales</th>
+        </tr>
+        <tr>
+            <th>City</th>
+             <th>Number of houses sold</th>
+        </tr>
+        <tr>
+            <td>Liberty City</td>
+            <td>631</td>
+        </tr>
+        <tr>
+            <td>Briggs Corner</td>
+            <td>668</td>
+        </tr>
+        <tr>
+            <td>Tawson</td>
+            <td>636</td>
+        </tr>
+        <tr>
+            <td>Baltimore</td>
+            <td>613</td>
+        </tr>
+        </table>
+        <details>
+            <summary>Show Answer</summary>
+            <div class="answer">
+              <p><strong>Answer:</strong>Briggs Corner</p>
+            </div>
+          </details>
+    </details>
+
+    <details>
+        <summary>Test 4: Order numbers </summary>
+        <p><strong>Question:</strong> Put these numbers in order from <u>greatest</u> to <u>least</u>.
+            <div class="number-box">2744</div>
+            <div class="number-box">2703</div>
+            <div class="number-box">6687</div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 6687 -- 2744 -- 2703</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 5: Order numbers </summary>
+        <p><strong>Question:</strong> Put these numbers in order from <u>greatest</u> to <u>least</u>.
+            <div class="number-box">168,665</div>
+            <div class="number-box">193,793</div>
+            <div class="number-box">217,290</div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 217,290 -- 193,793 -- 168,665</p>
+          </div>
+        </details>
+      </details>
+
+  </section>
+
+  
+  <!-- </section> -->
+
+  <section id="Addition_and_subtraction">
+    <h2>Addition and subtraction</h2>
+    <details>
+        <summary>Test 1: Algebra Basics_Add_</summary>
+        <p><strong>Question:</strong> Add.
+          <div class="addition">
+              <div>  1,762</div>
+              <div>+ 3,909</div>
+              <div class="line"></div>
+              <div>  ?</div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 5,671</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 2: Algebra Basics_Add_</summary>
+        <p><strong>Question:</strong> Add.
+          <div class="addition">
+              <div>  6,610</div>
+              <div>+ 2,496</div>
+              <div class="line"></div>
+              <div>  ?</div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 9,106</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 3: Algebra Basics_Subtract_</summary>
+        <p><strong>Question:</strong> Subtract.
+          <div class="addition">
+              <div>  8,272</div>
+              <div>- 4,981</div>
+              <div class="line"></div>
+              <div>  ?</div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 3,291</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 4: Algebra Basics_Subtract_</summary>
+        <p><strong>Question:</strong> Subtract.
+          <div class="addition">
+              <div>  12,321</div>
+              <div>- 9,874</div>
+              <div class="line"></div>
+              <div>  ?</div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 2,447</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 5: Multi-digit numbers: word problems</summary>
+        <p><strong>Question:</strong> During the night shift, a factory produced 9,583 small 
+                                     paper clips and 8,469 large ones. How many paper clips did the factory produce during 
+                                     that shift?
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 18,052</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 6: Multi-digit numbers: word problems</summary>
+        <p><strong>Question:</strong> Since he was hired, a chef has served a total of 6,905 
+                                      guests. Of those guests, 455 were adults. How many children has the chef served?
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 6,450</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 7: Multi-digit numbers: word problems</summary>
+        <p><strong>Question:</strong> Before December, customers buy 9,350 ear muffs from the mall. During December, 
+                                      they buy 4,565 more, and there are none left. In all, how many ear muffs do the 
+                                      customers buy?.
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 13,915</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 8: Multi-digit numbers: word problems</summary>
+        <p><strong>Question:</strong> A company painted some houses in Baltimore white and blue using a total of 8,866 
+            gallons of paint.  If they used 6,259 gallons of white paint, how many gallons of blue paint did the company use?
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 2,607</p>
+          </div>
+        </details>
+      </details>
+  </section>
+
+
+
+  <section id="Multiplication">
+    <h2>Multiplication</h2>
+    <details>
+        <summary>Test 1: Multi-step: word problems</summary>
+        <p><strong>Question:</strong> A toy factory has a goal of making 1,500 action figures a day. Currently, the factory can 
+            make 165 action figures each hour, and it runs for 8 hours per day. To meet the goal, how many more action figures 
+            would the factory need to make each day?
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 168 &times; 5=1320; 1500-1320=180</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 2: Multi-step: word problems</summary>
+        <p><strong>Question:</strong> 
+            Multiply using partial products. Fill in the missing numbers.
+            <div class="addition">
+                <div>  81</div>
+                <div>&times; 96</div>
+                <div class="line"></div>
+                <div> 7200</div>
+                <div class="number-box">      </div>
+                <div>480</div>
+                <div>  6</div>
+                <div class="line"></div><br>
+                <div class="number-box">      </div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 90 &times; 1 = 90;</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 3: Multi-step: word problems</summary>
+        <p><strong>Question:</strong> 
+            Multiply using partial products. Fill in the missing numbers.
+            <div class="addition">
+                <div>  35</div>
+                <div>&times; 62</div>
+                <div class="line"></div>
+                <div> 1800</div>
+                <div class="number-box">      </div>
+                <div>300</div>
+                <div>+  6</div>
+                <div class="line"></div><br>
+                <div class="number-box">      </div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 2 &times; 30 = 60; 2170</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 4: Multi-step: word problems</summary>
+        <p><strong>Question:</strong> 
+            Multiply using partial products. Fill in the missing numbers.
+            <div class="addition">
+                <div>  54</div>
+                <div>&times; 42</div>
+                <div class="line"></div>
+                <div class="number-box">      </div>
+                <div> 160</div>
+                <div>100</div>
+                <div>+  8</div>
+                <div class="line"></div><br>
+                <div class="number-box">      </div>
+            </div>
+        </p>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 50 &times; 40 = 2000; 2268</p>
+          </div>
+        </details>
+      </details>
+
+      <details>
+        <summary>Test 5: Estimate products</summary>
+        <p><strong>Question:</strong> Estimate the product. Round each factor to the nearest ten, then multiply.   
+        </p>
+        <div class="number-box">87 &times; 67</div>
+        <details>
+          <summary>Show Answer</summary>
+          <div class="answer">
+            <p><strong>Answer:</strong> 90 &times; 70 = 6300</p>
+          </div>
+        </details>
+      </details>
+  </section>
+
+</body>
+</html>
+
+

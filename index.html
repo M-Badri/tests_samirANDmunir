@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Practice Portal</title>
+
+  <!-- Google Font for a friendlier look -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- Base  -------------------------------------------------- */
+    :root {
+      --accent: #3b82f6;      /* blue‑500 */
+      --accent-light: #e0ecff;/* 10% tint */
+      --bg-start: #f5f8ff;
+      --bg-end:   #dee9ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    /* --- Layout -------------------------------------------------- */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+      margin: 0 0 0.25em;
+      color: #111827; /* gray‑900 */
+    }
+    p.subtitle {
+      font-size: clamp(1rem, 1.5vw + .25rem, 1.25rem);
+      margin-bottom: 2.5rem;
+      color: #374151; /* gray‑700 */
+    }
+
+    /* --- Cards --------------------------------------------------- */
+    .card-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      padding: 0 1rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 2rem 1.75rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.08);
+    }
+    .card::after {       /* decorative corner ribbon */
+      content: "";
+      position: absolute;
+      top: 0; right: 0;
+      width: 0; height: 0;
+      border-top: 48px solid var(--accent);
+      border-left: 48px solid transparent;
+      border-radius: 0 1.25rem 0 0;
+    }
+
+    .card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #111827;
+      position: relative;
+      z-index: 1;      /* sit over ribbon pseudo‑element */
+    }
+    .card p {
+      margin: 0;
+      color: #4b5563; /* gray‑600 */
+      position: relative;
+      z-index: 1;
+    }
+
+    /* --- Footer -------------------------------------------------- */
+    footer {
+      margin-top: 3rem;
+      font-size: .875rem;
+      color: #6b7280; /* gray‑500 */
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>📚 Course Practice Portal</h1>
+    <p class="subtitle">Choose your personalized practice tests below.</p>
+
+    <section class="card-grid">
+      <!-- Samir’s card -->
+      <a class="card" href="material/samir_classes/samir_toc.html">
+        <h2>Samir’s Practice Tests</h2>
+        <p>Focus on reading and mathematics drills.</p>
+      </a>
+
+      <!-- Munir’s card -->
+      <a class="card" href="material/munir_classes/munir_toc.html">
+        <h2>Munir’s Practice Tests</h2>
+        <p>Practice reading, mathematics, and problem‑solving.</p>
+      </a>
+    </section>
+
+    <footer>
+      © <span id="year"></span> All rights reserved.
+    </footer>
+  </main>
+
+  <!-- small JS snippet just for the current year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
